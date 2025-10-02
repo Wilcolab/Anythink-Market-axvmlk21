@@ -1,3 +1,6 @@
+
+// Write a Javacript function to CamelCAse that converts strings to camelCase. There are some examples "first name" -> " firstName",  "SCREEN_NAME" -> "screenName",  "mobile-number" -> mobileNumber. Handle edge cases like undefined or null values, or more than one whitespace. Also handle more tan two words for example "you win it" -> youWinit
+
 function toCamelCase(str) {
     return str
         .replace(/[_\-\s]+(.)?/g, (_, chr) => chr ? chr.toUpperCase() : '')
